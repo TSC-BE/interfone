@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data>
+        <!-- User Main Form View Changes -->
+        <record id="res_users_view_form_inherit_click2call" model="ir.ui.view">
+            <field name="name">res.users.form.inherit.click2call</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='messaging']" position="before">
+                    <group>
+                        <group
+              name="click2call_uniqueid"
+              string="Interfone Connect"
+              style="width:50%"
+            >
+                            <field name="click2call_uniqueid" />
+                        </group>
+                        <group name="click2call_uniqueid" string="." style="width:50%">
+                            <field name="kazoo_id" />
+                                <field name="kazoo_user_id" />
+                        </group>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- User Preference Form View Changes -->
+        <record
+      id="res_users_view_form_preference_inherit_click2call"
+      model="ir.ui.view"
+    >
+            <field name="name">res.users.form.preference.inherit.click2call</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form_simple_modif" />
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='preferences']" position="after">
+                    <group>
+                        <group
+              name="click2call_uniqueid"
+              string="Interfone Connect"
+              style="width:50%"
+            >
+                            <field name="click2call_uniqueid" />
+                        </group>
+                        <group name="click2call_uniqueid" string="." style="width:50%">
+                            <field name="kazoo_id" />
+                            <field name="kazoo_user_id" />
+                        </group>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
