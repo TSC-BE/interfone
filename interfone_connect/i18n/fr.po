@@ -1,0 +1,67 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* interfone_connect
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-22 08:44+0000\n"
+"PO-Revision-Date: 2023-12-22 08:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: interfone_connect
+#: model:ir.model.fields,field_description:interfone_connect.field_res_users__kazoo_id
+msgid "Account ID"
+msgstr ""
+
+#. module: interfone_connect
+#: model:ir.model.fields,field_description:interfone_connect.field_res_users__click2call_uniqueid
+msgid "Click2Call ID"
+msgstr ""
+
+#. module: interfone_connect
+#: model:ir.model,name:interfone_connect.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: interfone_connect
+#: code:addons/interfone_connect/models/res_partner.py:0
+#: code:addons/interfone_connect/models/res_partner.py:0
+#, python-format
+msgid "Initiating Call..."
+msgstr "Lancement d'un appel..."
+
+#. module: interfone_connect
+#: model_terms:ir.ui.view,arch_db:interfone_connect.res_users_view_form_inherit_click2call
+#: model_terms:ir.ui.view,arch_db:interfone_connect.res_users_view_form_preference_inherit_click2call
+msgid "Interfone Connect"
+msgstr ""
+
+#. module: interfone_connect
+#: code:addons/interfone_connect/models/res_partner.py:0
+#: code:addons/interfone_connect/models/res_partner.py:0
+#, python-format
+msgid "Please configure Click2Call UniqueID in User -> Preference."
+msgstr "Veuillez configurer Click2Call UniqueID dans Utilisateur -> Préférence."
+
+#. module: interfone_connect
+#: model:ir.model.fields,field_description:interfone_connect.field_res_users__kazoo_user_id
+msgid "User ID"
+msgstr ""
+
+#. module: interfone_connect
+#: model:ir.model,name:interfone_connect.model_res_users
+msgid "Users"
+msgstr ""
+
+#. module: interfone_connect
+#: code:addons/interfone_connect/controllers/main.py:0
+#, python-format
+msgid "is calling"
+msgstr "appelle"
